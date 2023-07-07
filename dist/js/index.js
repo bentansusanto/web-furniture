@@ -77,12 +77,15 @@ const testimonials = ['testimonial1', 'testimonial2', 'testimonial3'];
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const whatsapp = document.getElementById('whatsapp').value;
+        const numberWA = "+6282221868004"
   
         // Format the message to be sent to WhatsApp
         const message = `Name: ${name}%0aEmail: ${email}%0aWhatsApp: ${whatsapp}`;
   
         // Construct the WhatsApp URL
-        const whatsappURL = `https://api.whatsapp.com/send?phone=+62817270493&text=${message}`;
+        const whatsappURL = `https://wa.me/${numberWA}?text=${encodeURIComponent(
+          message
+        )}`;
   
         // Open WhatsApp in a new tab
         window.open(whatsappURL, '_blank');

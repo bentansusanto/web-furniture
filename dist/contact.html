@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -139,10 +140,10 @@
     <!-- Hero Section -->
     <div class="section">
       <div class="md:mt-52 mt-24 md:px-20 px-3">
-        <h2 class="text-4xl font-bold text-white">Let's Discuss Your Project</h2>
+        <h2 data-aos="fade-up" data-aos-duration="1000" class="text-4xl font-bold text-white">Let's Discuss Your Project</h2>
         <!-- Form -->
-        <div class="bg-[#080808b9] mt-10 w-auto rounded-md p-5">
-            <form action="#" id="contactForm">
+        <div data-aos="fade-up" data-aos-duration="1500" class="bg-[#080808b9] mt-10 w-auto rounded-md p-5">
+            <form id="contactForm">
                 <div class="mb-3 space-y-2">
                     <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full bg-[#484848a4] outline-none text-white rounded-md p-3 placeholder:text-sm">
                 </div>
@@ -153,7 +154,7 @@
                     <input type="text" id="whatsapp" name="whatsapp" placeholder="Enter your whatsapp" class="w-full bg-[#484848a4] outline-none text-white rounded-md p-3 placeholder:text-sm">
                 </div>
                 <div>
-                    <button id="sendBtn" class="w-full bg-black rounded-md text-white text-center uppercase outline-none font-semibold py-3">Send now</button>
+                    <button id="sendBtn" type="submit" class="w-full bg-black rounded-md text-white text-center uppercase outline-none font-semibold py-3">Send now</button>
                 </div>
             </form>
         </div>
@@ -161,36 +162,40 @@
         <!-- Contact -->
         <div class="md:flex mt-10 md:w-[30rem] md:space-x-20 space-y-5 md:space-y-0">
             <div class="space-y-2">
-                <h4 class="text-lg font-semibold text-white">HEADQUARTERS</h4>
-                <p class="text-gray-300">Menara 165, 21st Floor
+                <h4 data-aos="fade-up" data-aos-duration="1000" class="text-lg font-semibold text-white capitalize">Headquarters</h4>
+                <p data-aos="fade-up" data-aos-duration="1500" class="text-gray-300">Menara 165, 21st Floor
                     Jalan T.B Simatupang Kav 1, Cilandak,
                     Jakarta Selatan, DKI Jakarta
                     12560</p>
             </div>
             <div>
-                <h4 class="text-lg font-semibold text-white">CORRESPONDENCY</h4>
-                <div class="my-2 flex items-center space-x-3 text-white">
+                <h4 data-aos="fade-up" data-aos-duration="1000" class="text-lg font-semibold text-white capitalize">Correnspondecy</h4>
+                <div data-aos="fade-up" data-aos-duration="1400" class="my-2 flex items-center space-x-3 text-white">
                     <img src="../assets/email.svg" alt="email">
-                    <p>hallo@drk.co.id</p>
+                    <p>hallo@dann.co.id</p>
                 </div>
-                <div class="my-2 flex items-center space-x-3 text-white">
+                <div data-aos="fade-up" data-aos-duration="1600" class="my-2 flex items-center space-x-3 text-white">
                     <img src="../assets/instagram.svg" alt="instagram">
-                    <p>@drkinterior.id</p>
+                    <p>@drkinterior</p>
                 </div>
-                <div class="my-2 flex items-center space-x-3 text-white">
+                <div data-aos="fade-up" data-aos-duration="1800" class="my-2 flex items-center space-x-3 text-white">
                     <img src="../assets/whatsapp.svg" alt="whatsapp">
-                    <p>+62 817 270 493</p>
+                    <p>+6282221868004</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="fixed md:bottom-10 bottom-5 md:right-10 right-5">
-        <a href="https://api.whatsapp.com/send?phone=+62817270493" target="_blank">
+    <div data-aos="zoom-out" data-aos-duration="1000" class="fixed md:bottom-10 bottom-5 md:right-10 right-5">
+        <a href="https://wa.me/+6282221868004" target="_blank">
             <img src="../assets/whatsapp1.svg" alt="whatsapp1" class="w-16">
         </a>
     </div>
     </div>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -139,27 +140,27 @@
     <!-- Hero Section -->
     <div class="section section1">
       <div class="md:mt-72 mt-20 mb-40 md:px-20 px-0 mx-auto md:mx-0">
-        <h1
+        <h1 data-aos="fade-up" data-aos-duration="1000"
           class="md:text-5xl text-3xl leading-tight font-bold text-white"
         >
           Our Portofolio
         </h1>
-        <div class="md:flex block items-start md:space-x-16 space-y-24 md:space-y-0 mt-8">
+        <div data-aos="fade-up" data-aos-duration="1500" class="md:flex block items-start md:space-x-16 space-y-24 md:space-y-0 mt-8">
             <div class="relative">
-                <div class="bg-white w-52 py-3 px-5 h-52">
-                    <p class="text-lg font-semibold">Bookshelf</p>
+                <div class="bg-[#1c1c1c8e] w-52 py-3 px-5 h-52">
+                    <p class="text-lg font-semibold text-white">Book Self</p>
                 </div>
                 <img src="../assets/bookself.webp" alt="bookself" class="absolute top-12 left-5">
             </div>
             <div class="relative">
-                <div class="bg-white w-52 py-3 px-5 h-52">
-                    <p class="text-lg font-semibold">Kitchen set</p>
+                <div class="bg-[#1c1c1c8e] w-52 py-3 px-5 h-52">
+                    <p class="text-lg font-semibold text-white">Kitchen set</p>
                 </div>
                 <img src="../assets/kitchen-set.webp" alt="bookself" class="absolute top-12 left-5">
             </div>
             <div class="relative">
-                <div class="bg-white w-52 py-3 px-5 h-52">
-                    <p class="text-lg font-semibold">Office Room</p>
+                <div class="bg-[#1c1c1c8e] w-52 py-3 px-5 h-52">
+                    <p class="text-lg font-semibold text-white">Office Room</p>
                 </div>
                 <img src="../assets/officeroom.webp" alt="bookself" class="absolute top-12 left-5">
             </div>
@@ -168,5 +169,9 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

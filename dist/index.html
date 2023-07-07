@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -138,7 +139,7 @@
 
     <!-- Hero Section -->
     <div class="section section1 active">
-      <div class="md:pt-72 pt-72 md:px-20 px-3">
+      <div data-aos="fade-up" data-aos-duration="1000" class="md:pt-72 pt-72 md:px-20 px-3">
         <h1
           class="md:text-5xl text-3xl leading-tight font-bold text-white md:w-[50%]"
         >
@@ -156,7 +157,7 @@
     <!-- Why Choose Us -->
     <div class="section section2">
       <div class="md:pt-32 md:px-20 px-3">
-        <div class="space-y-2">
+        <div data-aos="fade-up" data-aos-duration="1000" class="space-y-2">
             <h1
               class="md:text-lg text-center md:text-start text-3xl font-medium text-[#FFD79C] capitalize"
             >
@@ -168,7 +169,7 @@
               Why choose us
             </h1>
         </div>
-        <div class="md:flex block items-start mx-10 md:mx-0 md:space-x-5 space-x-0 space-y-5 md:space-y-0 mt-10 text-white">
+        <div data-aos="fade-up" data-aos-duration="2000" class="md:flex block items-start mx-10 md:mx-0 md:space-x-5 space-x-0 space-y-5 md:space-y-0 mt-10 text-white">
             <div class="space-y-2 w-64 ">
                 <img src="../assets/choose1.webp" alt="choose-us">
                 <p class="text-center">Crafted with excellent materials</p>
@@ -188,12 +189,12 @@
     <!-- Our Review -->
     <div class="section section3">
         <div class="mt-[40rem] md:mt-96 md:px-20 px-3">
-            <h1
+            <h1 data-aos="fade-up" data-aos-duration="1000"
               class="md:text-5xl text-center md:text-start text-3xl font-bold text-white capitalize"
             >
               Our Review
             </h1>
-            <div id="testimonialContainer" class="relative md:w-[35vw] w-auto bg-white p-3 mt-5">
+            <div data-aos="fade-up" data-aos-duration="1500" id="testimonialContainer" class="relative md:w-[35vw] w-auto bg-white p-3 mt-5">
                 <div id="testimonial1" class="testimonial flex flex-col md:flex-row md:space-y-0 space-y-3  items-start space-x-3">
                     <img src="../assets/testimoni1.webp" alt="testimoni-1" class="md:w-40 w-auto">
                     <div class="space-y-2">
@@ -246,5 +247,9 @@
     </div>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

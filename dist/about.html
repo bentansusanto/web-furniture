@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -137,17 +138,17 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="section section1 active">
-      <div class="md:pt-72 pt-28 md:px-20 px-3">
+    <div class="section section1">
+      <div data-aos="fade-up" data-aos-duration="1000" class="md:pt-72 pt-28 md:px-20 px-3">
         <h1
           class="md:text-5xl text-3xl leading-tight font-bold text-white md:w-[50%]"
         >
         Company Information
         </h1>
-        <p class="text-white md:w-[45%] leading-relaxed pt-5">
+        <p data-aos="fade-up" data-aos-duration="1500" class="text-white md:w-[45%] leading-relaxed pt-5">
             Dann Ruang Kreasi (DKR) is engaged in the interior decoration industry and the manufacture of furniture for household and office needs. Our scope of work includes interior design consulting and the manufacture of furniture such as tables, chairs, beds, cabinets, shelves, cabinets, room dividers, and the like.
         </p>
-        <p class="text-white md:w-[45%] leading-relaxed pt-5">
+        <p data-aos="fade-up" data-aos-duration="2000" class="text-white md:w-[45%] leading-relaxed pt-5">
             Our strength lies in guaranteed quality due to the use of a working system and Standard Operating Procedures that are professional and supported by partners and extensive corporate relations from various business fields by the company founders and employees who have been tested for placement through a rigorous and measurable selection following his expertise.
         </p>
       </div>
@@ -157,22 +158,22 @@
     <div id="vision-mision" class="section section2">
       <div class="md:pt-32 pt-28 md:px-20 px-3">
         <div class="mt-10">
-            <h1
+            <h1 data-aos="fade-up" data-aos-duration="1000"
               class="md:text-5xl text-center md:text-start text-3xl font-bold text-white capitalize"
             >
               Vision
             </h1>
-            <p class="text-white md:w-[45%] leading-relaxed pt-5">
+            <p data-aos="fade-up" data-aos-duration="1500" class="text-white md:w-[45%] leading-relaxed pt-5">
                 Our strength lies in guaranteed quality due to the use of a working system and Standard Operating Procedures that are professional and supported by partners and extensive corporate relations from various business fields by the company founders and employees who have been tested for placement through a rigorous and measurable selection following his expertise.
             </p>
         </div>       
         <div class="mt-10">
-            <h1
+            <h1 data-aos="fade-up" data-aos-duration="1000"
               class="md:text-5xl text-center md:text-start text-3xl font-bold text-white capitalize"
             >
               Mision
             </h1>
-            <ul class="ml-5 mt-5 text-white">
+            <ul data-aos="fade-up" data-aos-duration="1500" class="ml-5 mt-5 text-white">
                 <li class="list-disc">Menghasilkan produk furniture berkualitas dengan mengedepankan green sustainability</li>
                 <li class="list-disc">Mengelola dan mengembangkan Sumber Daya Manusia yang professional</li>
                 <li class="list-disc">Meningkatkan kerjasama mitra bisnis dengan business partner untuk menghasilkan profit perusahaan.</li>
@@ -184,28 +185,32 @@
     <!-- Management -->
     <div id="management" class="section section3">
         <div class="mt-[12rem] md:mt-72 md:px-20 px-3">
-            <h1
+            <h1 data-aos="fade-up" data-aos-duration="1000"
               class="md:text-5xl text-center md:text-start text-3xl font-bold text-white capitalize"
             >
               Management
             </h1>
-            <div class="flex items-end space-x-3 mt-5">
-                <img src="../assets/team-picture.webp" alt="team-picture" class="w-32">
-                <div class="space-y-2">
+            <div  class="flex items-end space-x-3 mt-5">
+                <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/team-picture.webp" alt="team-picture" class="w-32">
+                <div data-aos="fade-left" data-aos-duration="1000" class="space-y-2">
                     <p class="font-semibold text-white">Wildan Asysyaibani</p>
-                    <p class="text-gray-400">President Director</p>
+                    <p class="text-gray-300">President Director</p>
                 </div>
             </div>
             <div class="flex items-end space-x-3 mt-4">
-                <img src="../assets/team-picture.webp" alt="team-picture" class="w-32">
-                <div class="space-y-2">
-                    <p class="font-semibold text-white">A. Jinar Sabilla</p>
-                    <p class="text-gray-400">President Commisioner</p>
+                <img data-aos="zoom-in" data-aos-duration="1500" src="../assets/team-picture.webp" alt="team-picture" class="w-32">
+                <div data-aos="fade-left" data-aos-duration="1000" class="space-y-2">
+                    <p class="font-semibold text-white">A. Jihar Sabilla</p>
+                    <p class="text-gray-300">President Commisioner</p>
                 </div>
             </div>
           </div>
     </div>
 
     <script src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
