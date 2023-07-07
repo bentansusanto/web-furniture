@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      .section {
+        height: 100vh;
+        display: flex;
+        opacity: 1;
+      }
+
+      .fixed-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: -1;
+        background-attachment: fixed;
+      }
+
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+
+    <nav class="navbar">
+      <!-- Desktop Navigation -->
+      <div
+        class="md:flex hidden items-center py-5 px-20 sticky top-0 bg-[#13131397]"
+      >
+        <img src="../assets/logo-drk.svg" alt="logo-drk" class="w-28" />
+        <ul class="hidden md:flex items-center space-x-10 px-4 py-2 ml-auto">
+          <li>
+            <a class="text-white" href="index.html">Home</a>
+          </li>
+          <li class="relative">
+            <p class="text-white">About Us</p>
+            <ul
+              class="absolute hidden bg-gray-700 text-white py-2 h-auto right-0 w-56 rounded-md"
+            >
+              <li>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="about.html"
+                  >Company Information</a
+                >
+              </li>
+              <li>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="#vision-mision"
+                  >Vision and Mision</a
+                >
+              </li>
+              <li>
+                <a class="block px-4 py-2 hover:bg-gray-600" href="#management"
+                  >Management</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="text-white" href="portofolio.html">Portofolio</a>
+          </li>
+          <li>
+            <a class="text-white" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="md:hidden flex items-center justify-between px-4 py-4 bg-[#13131397]">
+        <img src="../assets/logo-drk.svg" alt="logo-drk" class="w-20" />
+        <button id="mobile-menu-toggle" class="text-white focus:outline-none">
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <ul
+        id="mobile-menu"
+        class="md:hidden hidden absolute top-14 bg-gray-700 w-full text-white py-2"
+      >
+        <li><a class="block px-4 py-2 hover:bg-gray-600" href="index.html">Home</a></li>
+        <li class="relative">
+          <p class="block px-4 py-2 cursor-pointer hover:bg-gray-600">About</p>
+          <ul class="px-5 hidden bg-gray-700 text-white py-1">
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-600" href="about.html"
+                >Company Information</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-600" href="#vision-mision"
+                >Vision and Mision</a
+              >
+            </li>
+            <li>
+              <a class="block px-4 py-2 hover:bg-gray-600" href="#management"
+                >Management</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-600" href="portofolio.html">Portofolio</a>
+        </li>
+        <li>
+          <a class="block px-4 py-2 hover:bg-gray-600" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <div class="fixed-background background">
+      <!-- Background content here -->
+    </div>
+
+    <!-- Hero Section -->
+    <div class="section section1 active">
+      <div class="md:pt-72 pt-72 md:px-20 px-3">
+        <h1
+          class="md:text-5xl text-3xl leading-tight font-bold text-white md:w-[50%]"
+        >
+          Transform Your Space with DRK Interior's Signature Style.
+        </h1>
+        <p class="text-white md:w-[45%] pt-5">
+          Experience the power of exceptional design as we unlock the hidden
+          potential of your space. Our team of skilled professionals will
+          transform your interior into a captivating haven, tailored to your
+          lifestyle and filled with style and functionality.
+        </p>
+      </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <div class="section section2">
+      <div class="md:pt-32 md:px-20 px-3">
+        <div class="space-y-2">
+            <h1
+              class="md:text-lg text-center md:text-start text-3xl font-medium text-[#FFD79C] capitalize"
+            >
+            Exceptional Design Expertise
+            </h1>
+            <h1
+              class="md:text-5xl text-center md:text-start text-3xl font-bold text-white capitalize"
+            >
+              Why choose us
+            </h1>
+        </div>
+        <div class="md:flex block items-start mx-10 md:mx-0 md:space-x-5 space-x-0 space-y-5 md:space-y-0 mt-10 text-white">
+            <div class="space-y-2 w-64 ">
+                <img src="../assets/choose1.webp" alt="choose-us">
+                <p class="text-center">Crafted with excellent materials</p>
+            </div>
+            <div class="space-y-2 w-64">
+                <img src="../assets/choose2.webp" alt="choose-us">
+                <p class="text-center">Customized Design by professional designer</p>
+            </div>
+            <div class="space-y-2 w-64">
+                <img src="../assets/choose3.webp" alt="choose-us">
+                <p class="text-center">Free design consultasion</p>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Review -->
+    <div class="section section3">
+        <div class="mt-[40rem] md:mt-96 md:px-20 px-3">
+            <h1
+              class="md:text-5xl text-center md:text-start text-3xl font-bold text-white capitalize"
+            >
+              Our Review
+            </h1>
+            <div id="testimonialContainer" class="relative md:w-[35vw] w-auto bg-white p-3 mt-5">
+                <div id="testimonial1" class="testimonial flex flex-col md:flex-row md:space-y-0 space-y-3  items-start space-x-3">
+                    <img src="../assets/testimoni1.webp" alt="testimoni-1" class="md:w-40 w-auto">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3">
+                            <img src="../assets/people1.png" alt="people-1" class="w-12">
+                            <div>
+                                <p class="font-semibold">John Doe</p>
+                                <p class="text-gray-300">Content Creator</p>
+                            </div>
+                        </div>
+                        <h3 class="text-md font-semibold mb-2">COZY LIVING ROOM</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed vulputate ligula, vitae luctus nulla. Vestibulum interdum dapibus ligula id efficitur.</p>
+                    </div>
+                </div>
+                <div id="testimonial2" class="testimonial flex flex-col md:flex-row md:space-y-0 space-y-3 items-start space-x-3">
+                    <img src="../assets/testimoni1.webp" alt="testimoni-1" class="md:w-40 w-auto">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3">
+                            <img src="../assets/people1.png" alt="people-1" class="w-12">
+                            <div>
+                                <p class="font-semibold">John Wick</p>
+                                <p class="text-gray-300">Content Creator</p>
+                            </div>
+                        </div>
+                        <h3 class="text-md font-semibold mb-2">COZY LIVING ROOM</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div id="testimonial3" class="testimonial flex flex-col md:flex-row md:space-y-0 space-y-3 items-start space-x-3">
+                    <img src="../assets/testimoni1.webp" alt="testimoni-1" class="md:w-40 w-auto">
+                    <div class="space-y-2">
+                        <div class="flex items-center space-x-3">
+                            <img src="../assets/people1.png" alt="people-1" class="w-12">
+                            <div>
+                                <p class="font-semibold">John Doe</p>
+                                <p class="text-gray-300">Content Creator</p>
+                            </div>
+                        </div>
+                        <h3 class="text-md font-semibold mb-2">COZY LIVING ROOM</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed vulputate ligula, vitae luctus nulla. Vestibulum interdum dapibus ligula id efficitur.</p>
+                    </div>
+                </div>
+                <!-- Button Next and Preview -->
+                <div class="absolute md:right-0 right-0 mt-10 -bottom-12">
+                  <button id="prevBtn" class="text-white font-bold py-2 px-4 mr-2 text-4xl" onclick="showPrevTestimonial()"><</button>
+                  <button id="nextBtn" class="text-white font-bold py-2 px-4 text-4xl" onclick="showNextTestimonial()">></button>
+                </div>
+              </div>
+          </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
